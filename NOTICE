@@ -1,5 +1,5 @@
 This software uses Vosk. You may find Vosk under https://alphacephei.com/vosk/
-A copy of the license may be found under https://github.com/alphacep/vosk-api/blob/master/COPYING
+Vosk is licensed under Apache License 2.0, a copy of the license may be found under https://github.com/alphacep/vosk-api/blob/master/COPYING
 
 This software uses a modified version of VoiceProcessor.cs made by Picovoice found under https://github.com/Picovoice/unity-voice-processor/blob/main/Assets/UnityVoiceProcessor/VoiceProcessor.cs
 VoiceProcessor.cs is licensed under Apache License 2.0, a copy of the license may be found under https://github.com/Picovoice/unity-voice-processor/blob/main/Assets/UnityVoiceProcessor/LICENSE
