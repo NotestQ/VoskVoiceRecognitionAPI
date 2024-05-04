@@ -1,6 +1,12 @@
 # Vosk Voice Recognition API
 Use Vosk's speech recognition models to give mod developers more language options and tools.  
 
+## How to Build
+- Open the solution
+- Fix references if needed
+- Build the mod
+- Copy ALL contents of the bin/netstandard2.1 folder into your game, except the .json.
+
 # ATTRIBUTIONS
 
 This software uses [Vosk](https://alphacephei.com/vosk/).  
