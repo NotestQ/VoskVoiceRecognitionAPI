@@ -51,44 +51,28 @@
         <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.1" PrivateAssets="all" />
         <PackageReference Include="BepInEx.Core" Version="5.*" PrivateAssets="all" />
         <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" PrivateAssets="all" />
-        <PackageReference Include="ContentWarning.Libs" Version="*" Publicize="true" PrivateAssets="all" />
+        <PackageReference Include="ContentWarning.GameLibs.Steam" Version="0.1.11-a-ngd.0" />
         <PackageReference Include="UnityEngine.Modules" Version="2022.3.10" IncludeAssets="compile" PrivateAssets="all" />
-        <PackageReference Include="Vosk" Version="0.3.38" />
 
     </ItemGroup>
-
-    <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
-        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
-    </ItemGroup>
-
     <ItemGroup>
-      <Compile Update="Properties\Resources.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>Resources.resx</DependentUpon>
-      </Compile>
+      <Reference Include="Vosk">
+        <HintPath>VoskResources\Vosk.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+    <ItemGroup>
+      <None Update="VoskResources\libgcc_s_seh-1.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="VoskResources\libstdc++-6.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="VoskResources\libvosk.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="VoskResources\libwinpthread-1.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
-    <ItemGroup>
-      <EmbeddedResource Update="Properties\Resources.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="C:\Users\Notest_\.nuget\packages\vosk\0.3.38\build\lib\win-x64\libgcc_s_seh-1.dll" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="C:\Users\Notest_\.nuget\packages\vosk\0.3.38\build\lib\win-x64\libstdc++-6.dll" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="C:\Users\Notest_\.nuget\packages\vosk\0.3.38\build\lib\win-x64\libvosk.dll" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="C:\Users\Notest_\.nuget\packages\vosk\0.3.38\build\lib\win-x64\libwinpthread-1.dll" />
-    </ItemGroup>
 </Project>
