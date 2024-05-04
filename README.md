@@ -1,5 +1,5 @@
 # Vosk Voice Recognition API
-Use Vosk's speech recognition models to give mod developers more language options and tools.  
+Loads Vosk Speech recognition and provides a way of using it for mod developers, having more languages than Windows' speech recognition, while having less "unknown" word options.
 
 ## How to Build
 - Open the solution
