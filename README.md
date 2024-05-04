@@ -1,3 +1,6 @@
+# Vosk Voice Recognition API
+Use Vosk's speech recognition models to give mod developers more language options and tools.
+
 # ATTRIBUTIONS
 
 This software uses [Vosk](https://alphacephei.com/vosk/).
